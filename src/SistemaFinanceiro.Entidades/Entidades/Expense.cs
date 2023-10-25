@@ -11,9 +11,11 @@ namespace SistemaFinanceiro.Entidades.Entidades
     [Table("Expense")]
     public class Expense : BaseEntity
     {
-        public decimal Valor { get; set; }
-        public int Mes { get; set; }
-        public int Ano { get; set; }
+        public decimal Amount { get; set; }
+
+        public int Month { get; set; }
+        
+        public int Year { get; set; }
 
         public EnumExpenseType ExpenseType { get; set; }
 

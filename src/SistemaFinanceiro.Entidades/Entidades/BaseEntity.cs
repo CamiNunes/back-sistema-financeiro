@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SistemaFinanceiro.Entidades.Notificacoes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace SistemaFinanceiro.Entidades.Entidades
 {
-    public class BaseEntity
+    public class BaseEntity : Notify
     {
         [Display(Name = "Código")]
         public int Id { get; set; }
