@@ -34,6 +34,7 @@ namespace SistemaFinanceiro.Entidades.Entidades
         [ForeignKey("Category")]
         [Column(Order = 1)]
         public int IdCategory { get; set; }
+
         public virtual Category Category { get; set; }
     }
 }
