@@ -7,8 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Configuracao\" />
-    <Folder Include="Repositorios\" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.13" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SistemaFinanceiro.Dominio\SistemaFinanceiro.Dominio.csproj" />
+    <ProjectReference Include="..\SistemaFinanceiro.Entidades\SistemaFinanceiro.Entidades.csproj" />
   </ItemGroup>
 
 </Project>
